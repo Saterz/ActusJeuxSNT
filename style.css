@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@font-face {
+    font-family: 'Google sans';
+    src: url(./Fonts/GoogleSans-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(0.33turn, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    background-size: 500% 500%;
+    animation: GradientBackground 12s ease infinite;
+}
+
+@keyframes GradientBackground {
+    0%   { background-position: 0%   50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0%   50%; }
+}
+
+header{
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+body {
+    font-family: 'Google sans';
+}
+
+nav {
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 10px 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    margin: 0 10px;
+}
+
+#menu a {
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+#title{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero{
+    padding: 50px;
+    text-align: center;
+}
+
+.news{
+    padding: 50px;
+}
+
+.news-cards{
+    display: flex;
+}
+
+.card, .cardN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 55px;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .cardN:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(129, 124, 124, 0.3);
+}
+
+.about{
+    padding: 50px;
+    text-align: center;
+}
+
+.social{
+    padding: 50px;
+}
+
+.social svg{
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.social svg:hover{
+    transform: translateY(-10px);
+}
+
+#pied-de-page {
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+#disclaimer {
+    text-align: right;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+}
